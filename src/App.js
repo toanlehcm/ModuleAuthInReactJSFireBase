@@ -8,6 +8,26 @@ import Admin from './features/Admin/pages';
 function App() {
   // const [isSignedIn, setIsSignedIn] = useState(false); // Local signed-in state.
 
+  // Listen to the Firebase Auth state and set the local state.
+  // useEffect(() => {
+  //   const unregisterAuthObserver = auth.onAuthStateChanged(async (user) => {
+  //     if (!user) {
+  //       // user has been logged out.
+  //       console.log('user has been logged out.');
+  //       return
+  //     }
+
+  //     console.log('user', user);
+
+  //     const token = await user.getIdToken();
+  //     console.log('token', token);
+  //     setIsSignedIn(!!user);
+  //   });
+
+  //   // Make sure we un-register Firebase observers when the component unmounts.
+  //   return () => unregisterAuthObserver();
+  // }, []);
+
   return (
     <BrowserRouter>
       <Routes>

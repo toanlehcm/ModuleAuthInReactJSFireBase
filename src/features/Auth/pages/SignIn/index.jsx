@@ -1,8 +1,8 @@
 import React from "react";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+// import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../../../Firebase/config";
-import { Route, Routes, BrowserRouter, Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // Configure FirebaseUI.
 // const uiConfig = {
@@ -25,6 +25,7 @@ function SignIn(props) {
       const { providerId, user } = await signInWithPopup(auth, provider);
 
       if (providerId && user) {
+        console.log("user", user);
         navigate("/admin");
       }
     } catch (error) {
