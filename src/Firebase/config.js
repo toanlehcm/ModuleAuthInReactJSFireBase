@@ -4,8 +4,8 @@ import { getAuth } from "firebase/auth";
 
 // Configure Firebase.
 const firebaseConfig = {
-  apiKey: 'AIzaSyCVciy0imK-HCeA9fJDTtRHhSeIpRxuWS4',
-  authDomain: 'authreactjsfirebaseui.firebaseapp.com',
+  apiKey: "AIzaSyCVciy0imK-HCeA9fJDTtRHhSeIpRxuWS4",
+  authDomain: "authreactjsfirebaseui.firebaseapp.com",
   projectId: "authreactjsfirebaseui",
   storageBucket: "authreactjsfirebaseui.appspot.com",
   messagingSenderId: "731464871587",
